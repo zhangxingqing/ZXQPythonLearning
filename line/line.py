@@ -8,7 +8,7 @@ pygame.display.set_caption("Drawing Arcs")
 while True :
     for event in pygame.event.get():
         if event.type==QUIT:
-           sys.exit()
+           sys.exit()#退出程序
     screen.fill((0,0,200))
     #draw the arc
     color=255,0,255
