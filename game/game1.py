@@ -1,5 +1,6 @@
 import math
 import pygame
+import sys
 from pygame.locals import  *
 pygame.init()
 screen=pygame.display.set_mode((600,500))
@@ -24,14 +25,14 @@ while True:
         elif event.type==KEYUP:
             if event.key==pygame.K_ESCAPE:
                 sys.exit()
-        elif event.key==pygame.K_1:
-            piece1==True
-        elif event.key==pygame.K_2:
-            piece2==True
-        elif event.key==pygame.K_3 :
-            piece3==True
-        elif event.key==pygame.K_4:
-            piece4==True
+            elif event.key == pygame.K_1 :
+                piece1 = True
+            elif event.key == pygame.K_2 :
+                piece2 = True
+            elif event.key == pygame.K_3 :
+                piece3 = True
+            elif event.key == pygame.K_4 :
+                piece4 = True
     #clear the screen
     screen.fill((0,0,200))
     #draw the four numbers
@@ -49,7 +50,7 @@ while True:
         start_angle=math.radians(0)
         end_angle=math.radians(90)
         pygame.draw.arc(screen,color,position ,start_angle,end_angle,width)
-        pygmae.draw.line(screen,color,(x,y),(x,y-radius),width)
+        pygame.draw.line(screen,color,(x,y),(x,y-radius),width)
         pygame.draw.line(screen,color,(x,y),(x+radius,y),width)
     if piece2:
         start_angle=math.radians(90)
