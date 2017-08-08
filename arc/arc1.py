@@ -16,7 +16,7 @@ pygame.display.update()
 while True :
     for event in pygame.event.get():
         if event.type==QUIT:
-           sys.exit()#退出程序
+           sys.exit()#退出程序 我也制造冲突
 
 
 
