@@ -8,6 +8,7 @@ while True:#创建一个事件处理循环
     for event in pygame.event.get():
         if event.type==QUIT:
             sys.exit()#设置关闭按键
+    for event in pygame.event.get():#编历pygame事件数组
     screen.fill((0,0,200))#使用颜色 0，0，200来清除屏幕
     #draw a ellipse
     color=255,0,255
