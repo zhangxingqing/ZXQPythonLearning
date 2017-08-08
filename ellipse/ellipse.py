@@ -4,8 +4,6 @@ from pygame.locals import * #导入pygame中的所有常量
 pygame.init() #初使化pygame
 screen=pygame.display.set_mode((600,500))#获取对显示系统的访问 ，并创建一个窗口
 pygame.display.set_caption('Drawing Ellipse')#创建窗口的标题
-x=300
-y=250
 while True:#创建一个事件处理循环
     for event in pygame.event.get():
         if event.type==QUIT:
